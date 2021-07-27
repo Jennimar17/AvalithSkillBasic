@@ -1,4 +1,5 @@
-const texto = 'Mar del Plata​ es una ciudad ubicada en el sudeste de la provincia de Buenos Aires';
+const texto =
+  "Mar del Plata​ es una ciudad ubicada en el sudeste de la provincia de Buenos Aires";
 let textoCensurado = null;
 
 /*
@@ -10,4 +11,6 @@ let textoCensurado = null;
     Reemplazar este comentario con su codigo.
  */
 
-console.log(textoCensurado)
+textoCensurado = texto.replace(/[A-Za-z]/g, "X");
+
+console.log(textoCensurado);

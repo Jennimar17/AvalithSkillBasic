@@ -1,11 +1,11 @@
 const originalA = {
-    nombre: 'Sergio',
-    edad: 28,
-    preferidos: ['Pizza', 'Hamburguesa'],
-    madre: {
-        nombre: 'Sandra',
-        edad: 54,
-    },
+  nombre: "Sergio",
+  edad: 28,
+  preferidos: ["Pizza", "Hamburguesa"],
+  madre: {
+    nombre: "Sandra",
+    edad: 54,
+  },
 };
 const originalB = '{"nombre":"Damian","edad":26}';
 // -------
@@ -24,9 +24,9 @@ let clavesDelObjeto = [];
     - existeClaveMadreB: Si existe la clave madre en el objeto 'originalB'
     - nombreDelMasJoven: Nombre de la persona mas joven
     - clavesDelObjeto: Que claves contiene el objeto 'originalA'
-
+  
     Reemplazar este comentario con su codigo.
- */
+  */
 
 console.log(edadMadre);
 console.log(objetoParseado);

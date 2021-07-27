@@ -1,11 +1,20 @@
 const original = {
-    a: 1,
-    b: 2,
-    c: 3,
+  a: 1,
+  b: 2,
+  c: 3,
 };
 // -------
+/*
 let sinB = null;
 let valorDeC = null;
+*/
+
+// let sinB = [original["a"], original["c"]];
+// let valorDeC = original["c"];
+
+const { a, c } = original;
+sinB = { a, c };
+valorDeC = c;
 
 /*
     Utilizando SOLAMENTE destructoring, obtener los siguientes resultados:

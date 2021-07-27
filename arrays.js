@@ -1,11 +1,12 @@
-const original = ['Rojo', 'Verde', 'Azul', 'Amarillo'];
+const original = ["Rojo", "Verde", "Azul", "Amarillo"];
 // -------
-let indiceAmarillo = null;
+/*let indiceAmarillo = null;
 let cantidadColoresConA = 0;
 let arregloSinAzul = [];
 let ordenadoPorCantidadLetras = [];
 let arregloConNuevoColorInicio = [];
 let arregloConNuevoColorFin = [];
+*/
 
 /*
     A partir del arreglo original, obtener los siguientes resultados:
@@ -18,6 +19,14 @@ let arregloConNuevoColorFin = [];
 
     Reemplazar este comentario con su codigo.
  */
+
+indiceAmarillo = [...original].findIndex((color) => color == "Amarillo");
+arregloSinAzul = [...original].filter((color) => color != "Azul");
+ordenadoPorCantidadLetras = [...original].sort((a, b) => a.length - b.length);
+arregloConNuevoColorInicio = [...original];
+arregloConNuevoColorInicio.unshift("Naranja");
+arregloConNuevoColorFin = [...original];
+arregloConNuevoColorFin.push("Naranja");
 
 console.log(indiceAmarillo);
 console.log(cantidadColoresConA);

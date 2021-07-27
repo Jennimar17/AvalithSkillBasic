@@ -11,40 +11,40 @@
 */
 
 try {
-    /* TODO */ A = null;
-    A = 'Valor A';
+  let A = null;
+  A = "Valor A";
 } catch (error) {
-    console.log('Error al asignar A');
+  console.log("Error al asignar A");
 }
 
 try {
-    console.log(A)
+  console.log(A);
 } catch (error) {
-    console.log('"A" no existe!');
+  console.log('"A" no existe!');
 }
 
 try {
-    /* TODO */ B = null;
-    B = 'Valor B';
+  let B = null;
+  B = "Valor B";
 } catch (error) {
-    console.log('Error al asignar B');
+  console.log("Error al asignar B");
 }
 
 try {
-    console.log(B)
+  console.log(B);
 } catch (error) {
-    console.log('"B" no existe!');
+  console.log('"B" no existe!');
 }
 
 try {
-    /* TODO */ C = null;
-    C = 'Valor C';
+  const C = null;
+  C = "Valor C";
 } catch (error) {
-    console.log('Error al asignar C');
+  console.log("Error al asignar C");
 }
 
 try {
-    console.log(C)
+  console.log(C);
 } catch (error) {
-    console.log('"C" no existe!');
+  console.log('"C" no existe!');
 }

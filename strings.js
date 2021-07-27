@@ -1,14 +1,16 @@
-const stringA = 'Rojo,Verde,Amarillo,Azul';
-const stringB = 'Sergio';
-const stringC = 'Damian';
-const stringD = 'Mi nombre es Damian y tengo 28 años';
+const stringA = "Rojo,Verde,Amarillo,Azul";
+const stringB = "Sergio";
+const stringC = "Damian";
+const stringD = "Mi nombre es Damian y tengo 28 años";
 // -------
+/*
 let tamanioA = 0;
 let cantidadLetraR = 0;
 let nombreCompleto = '';
 let fraseOtroNombre = '';
 let posicionNombre = null;
 let arregloParseado = [];
+*/
 
 /*
     A partir de los arreglo originales, obtener los siguientes resultados:
@@ -21,6 +23,14 @@ let arregloParseado = [];
 
     Reemplazar este comentario con su codigo.
  */
+
+tamanioA = stringA.length;
+const regex = new RegExp("R", "ig");
+cantidadLetraR = stringA.match(regex).length;
+nombreCompleto = `${stringB} ${stringC}`;
+fraseOtroNombre = stringD.replace("Damian", stringB);
+posicionNombre = stringD.indexOf("Damian");
+arregloParseado = stringA.split(",");
 
 console.log(tamanioA);
 console.log(cantidadLetraR);

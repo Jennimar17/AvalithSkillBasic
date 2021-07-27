@@ -7,22 +7,20 @@
 
 console.log(1);
 
-/* TODO */ function esperar2segundos() {
-    console.log(3);
-    /* TODO */
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log(4);
-            resolve();
-        }, 2000);
-    });
-    /* TODO */
+function esperar2segundos() {
+  console.log(3);
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(4);
+      resolve();
+    }, 2000);
+  });
 }
 
-/* TODO */ function ejecutarMensajes() {
-    console.log(2);
-    /* TODO */ esperar2segundos();
-    console.log(5);
+async function ejecutarMensajes() {
+  console.log(2);
+  await esperar2segundos();
+  console.log(5);
 }
 
-/* TODO */ ejecutarMensajes();
+ejecutarMensajes();
